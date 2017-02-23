@@ -32,13 +32,22 @@
     <!-- NAVIGATION SLUT -->
 
 
-    <!-- BALTISK BONDESUPPE -->
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"> <img src="imgs/small/baltiskbondesuppe-sm.jpg">
-        <h4>Baltisk bondesuppe</h4>
-        <p>Baltisk bondesuppe - en solid starter!</p>
+    <!-- TEMPLATE -->
+    <template id="produkt_template">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+        <img class="img-responsive data_billede" src="imgs/small/baltiskbondesuppe-sm.jpg">
+        <h4 class="data_navn">DATA_NAVN</h4>
+        <h6 class="udsolgt">Pris: <span class="data_pris">DATA_PRIS</span>,-</h6>
+        <!-- TODO: SÆT UDSOLGT IND VED UDSOLGT -->
+        <h6 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h6>
+        <!-- SKAL KUN VISES VED RABAT -->
+        <h6 class="udsolgttekst">Denne vare er desværre udsolgt.</h6>
+        <!-- SKAL KUN VISES VED UDSOLGT PRODUKT -->
+
         <button type="button" class="btn btn-primary btn-lg open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
     </div>
-    <!-- BONDESUPPE SLUT -->
+    </template>
+    <!-- TEMPLATE SLUT -->
 
 
     <!-- BOCHKAREV -->
